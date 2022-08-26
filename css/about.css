@@ -1,0 +1,125 @@
+.aboutAchievement{
+    margin-top: 3rem;
+}
+.aboutAchieveCont{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+.aboutAchieveRight > p{
+    margin: 1.6rem 0 2.5rem;
+}
+
+.aboutAchieveLeft > img {
+    height: 30rem;
+
+}
+
+.achievementCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.achievementCard{
+    background: rgb(105, 28, 227);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 400ms ease;
+}
+
+.achievementCard:hover{
+    background: blueviolet;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.achievementIcon{
+    background: rgb(245, 36, 36);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.achievementCard:nth-child(2) .achievementIcon{
+    background: rgb(61, 244, 107);
+}
+.achievementCard:nth-child(3) .achievementIcon{
+    background: rgb(24, 17, 228);
+}
+
+.achievementCard p {
+    margin-top: 1rem;
+}
+
+
+.team{
+    background: rgb(104, 43, 226);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.teamCont{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    /* border-radius: 20rem; */
+
+}
+
+.teamMember{
+    background: rgb(69, 8, 184);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.teamMember:hover{
+    background: transparent;
+    border-color: rgb(98, 43, 226);
+}
+
+.teamMemberImg img {
+    filter: saturate(0);
+}
+
+.teamMember:hover img{
+    filter: saturate(1);
+}
+
+.teamMemberInfo * {
+    text-align: center;
+    margin-top: 1.4rem;
+
+}
+
+.teamMemberInfo p{
+    color: rgb(195, 193, 232);
+}
+
+.temMemberSocials{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(113, 17, 240);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: all 400ms ease;
+
+}
+.teamMember:hover
+.temMemberSocials{
+    right: 0;
+
+}
+
+.temMemberSocials a{
+    padding: 1rem;
+}
